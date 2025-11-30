@@ -88,15 +88,11 @@ const App = () => {
 ];
 
   return (
-  <>
-
-    {laptops.map((item, index) => (
-      <div key={index}>
-      <Cards laptops={item} />
-      </div>
-    ))}
-
-  </>
+    <div className="products-container">
+      {laptops.map((item, index) => (
+        <Cards key={index} laptops={item} />
+      ))}
+    </div>
   )
 }
 
